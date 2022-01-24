@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 mongoose
   .connect("mongodb://localhost/mongo-exercises")
   .then(() => console.log("connected successfully"))
-  .catch((error) => console.log(error));
+  .catch((error) => console.log("Error ",error));
 
 const courseSchema = mongoose.Schema({
   name: String,
